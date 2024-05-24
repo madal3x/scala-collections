@@ -6,7 +6,7 @@ import scala.concurrent.{Await, Future}
 import scala.concurrent.duration._
 import scala.concurrent.ExecutionContext.Implicits.global
 
-object SchoolConcurrentExample {
+trait SchoolConcurrentExample {
   def runExample(school: School): Unit = {
     val nrStudents = 100
     val addStudentsFutures = (1 to nrStudents).map { i =>

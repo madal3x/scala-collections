@@ -9,7 +9,7 @@ class SchoolAtomic extends School {
 
   def addStudent(name: Name): Unit = {
     // getAndUpdate doc tells us the function passed should not be a side-effect,
-    // so we will not modify students but will return another MBuffer
+    // so we will not modify the variable inside the AtomicReference but will return another MBuffer
     // with side-effect: students += name
     studentsRef.getAndUpdate(students => students :+ name)
   }
