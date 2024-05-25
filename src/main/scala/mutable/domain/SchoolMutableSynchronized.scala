@@ -3,13 +3,14 @@ package mutable.domain
 import scala.collection.mutable.{Buffer => MBuffer}
 
 class SchoolMutableSynchronized extends School {
-  private val students: MBuffer[Name] = MBuffer.empty[Name]
+  private val students: MBuffer[Student] = MBuffer.empty[Student]
 
-  def addStudent(name: Name): Unit = synchronized {
-    students += name
+  // using synchronized ensures that only one thread at a time has access inside its block
+  def registerStudent(student: Student): Unit = synchronized {
+    students += student
   }
 
-  def getStudents: MBuffer[Name] = {
+  def allStudents: MBuffer[Student] = {
     students
   }
 }

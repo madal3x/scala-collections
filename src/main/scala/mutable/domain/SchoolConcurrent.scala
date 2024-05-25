@@ -3,13 +3,13 @@ package mutable.domain
 import scala.collection.concurrent.TrieMap
 
 class SchoolConcurrent extends School {
-  private val students = TrieMap.empty[Name, Name]
+  private val students = TrieMap.empty[Student, Student]
 
-  def addStudent(name: Name): Unit = {
-    students += name -> name
+  def registerStudent(student: Student): Unit = {
+    students += student -> student
   }
 
-  def getStudents: Iterable[Name] = {
+  def allStudents: Iterable[Student] = {
     students.values
   }
 }

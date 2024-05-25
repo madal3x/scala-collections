@@ -1,8 +1,8 @@
 package mutable.domain
 
 trait School {
-  type Name = String
+  type Student = String
 
-  def addStudent(name: Name): Unit
-  def getStudents: Iterable[Name]
+  def registerStudent(student: Student): Unit
+  def allStudents: Iterable[Student]
 }

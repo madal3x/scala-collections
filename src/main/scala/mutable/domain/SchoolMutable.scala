@@ -3,13 +3,13 @@ package mutable.domain
 import scala.collection.mutable.{Buffer => MBuffer}
 
 class SchoolMutable extends School {
-  private val students: MBuffer[Name] = MBuffer.empty[Name]
+  private val students: MBuffer[Student] = MBuffer.empty[Student]
 
-  def addStudent(name: Name): Unit = {
-    students += name
+  def registerStudent(student: Student): Unit = {
+    students += student
   }
 
-  def getStudents: MBuffer[Name] = {
+  def allStudents: MBuffer[Student] = {
     students
   }
 }

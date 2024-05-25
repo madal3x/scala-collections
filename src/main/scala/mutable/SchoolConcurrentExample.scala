@@ -9,14 +9,14 @@ import scala.concurrent.ExecutionContext.Implicits.global
 trait SchoolConcurrentExample {
   def runExample(school: School): Unit = {
     val nrStudents = 100
-    val addStudentsFutures = (1 to nrStudents).map { i =>
+    val registerStudentsFutures = (1 to nrStudents).map { i =>
       Future {
-        school.addStudent(s"Student $i")
+        school.registerStudent(s"Student $i")
       }
     }
 
-    Await.result(Future.sequence(addStudentsFutures), 10.seconds)
+    Await.result(Future.sequence(registerStudentsFutures), 10.seconds)
 
-    println(s"""Nr students in School: ${school.getStudents.size}\nExpecting: ${nrStudents}""")
+    println(s"""Nr students in School: ${school.allStudents.size}\nExpecting: ${nrStudents}""")
   }
 }

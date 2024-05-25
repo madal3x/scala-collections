@@ -6,3 +6,8 @@ lazy val root = (project in file("."))
   .settings(
     name := "scala-collections"
   )
+
+libraryDependencies ++= Seq(
+  "com.typesafe.scala-logging" %% "scala-logging" % "3.9.4",
+  "ch.qos.logback" % "logback-classic" % "1.5.6"
+)
