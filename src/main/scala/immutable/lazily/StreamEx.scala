@@ -13,6 +13,7 @@ object StreamEx extends App {
 
   // Sieve of Eratosthenes
   // https://commons.wikimedia.org/wiki/File:New_Animation_Sieve_of_Eratosthenes.gif
+  // https://www.geogebra.org/m/uGX53dy7
   // sieve is a recursive function that filters out non-prime numbers from the stream
   def sieve(stream: Stream[Int] = natsFrom(2)): Stream[Int] =
     stream.head #:: sieve(stream.tail.filter(_ % stream.head != 0))

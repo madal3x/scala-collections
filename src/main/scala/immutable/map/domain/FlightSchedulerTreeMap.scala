@@ -8,6 +8,7 @@ import scala.collection.immutable.TreeMap
 class FlightSchedulerTreeMap {
   implicit val flightOrdering: Ordering[DepartureTime] = Ordering.by(_.getEpochSecond)
 
+  // not thread-safe, requires using AtomicReference or synchronized
   private var flights: TreeMap[DepartureTime, Flight] = TreeMap.empty
 
   def scheduleFlight(flight: Flight): Unit = {

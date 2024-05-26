@@ -21,8 +21,6 @@ object TreeMapEx extends App {
 
   println(s"Scheduled flights count ${flightScheduler.allScheduledFlights.size} expected $nrFlights")
 
-  flightScheduler.allScheduledFlights.foreach(println)
-
   def randomFlight(): Flight = {
     val departureTime = Instant.now().plus(Duration.ofMillis(Random.nextInt(24 * 60 * 60 * 1000)))
     val arrivalTime = departureTime.plus(Duration.ofMinutes(Random.nextInt(600)))

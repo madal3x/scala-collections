@@ -21,13 +21,12 @@ object flight extends App {
     }
   }
 
-
-
-  val flight = (100 to 1 by -1).map(seat => (seat, Random.nextString(5))).foldLeft(Flight("AA123")) {
-    case (flight, (seatNumber, passenger)) =>
-      println(s"${Thread.currentThread().getName} booking seatNumber $seatNumber")
-      flight.bookSeat(seatNumber, passenger)
-  }
+  val flight = (100 to 1 by -1)
+    .map(seat => (seat, Random.nextString(5)))
+    .foldLeft(Flight("AA123")) {
+      case (flight, (seatNumber, passenger)) =>
+        flight.bookSeat(seatNumber, passenger)
+    }
 
   println(flight.seats.size)
 }
