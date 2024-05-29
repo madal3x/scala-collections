@@ -1,6 +1,6 @@
-package mutable
+package concurrent
 
-import mutable.domain.SchoolAtomic
+import concurrent.domain.SchoolAtomic
 
 // list other Atomic's from Java
 object ConcurrentAtomic extends App with SchoolConcurrentExample {

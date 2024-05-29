@@ -1,6 +1,6 @@
-package mutable
+package concurrent
 
-import mutable.domain.School
+import concurrent.domain.School
 
 import scala.concurrent.{Await, Future}
 import scala.concurrent.duration._

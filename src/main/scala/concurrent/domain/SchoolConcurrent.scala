@@ -1,4 +1,4 @@
-package mutable.domain
+package concurrent.domain
 
 import scala.collection.concurrent.TrieMap
 

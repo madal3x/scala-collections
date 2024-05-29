@@ -1,4 +1,4 @@
-package mutable.domain
+package concurrent.domain
 
 trait School {
   type Student = String

@@ -1,10 +1,6 @@
-package mutable
+package concurrent
 
-import mutable.domain.SchoolMutable
-
-import scala.concurrent.ExecutionContext.Implicits.global
-import scala.concurrent.duration._
-import scala.concurrent.{Await, Future}
+import concurrent.domain.SchoolMutable
 
 // show AnyRef, AnyVal hierarchy & tell about copy value or copy reference
 /*

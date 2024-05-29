@@ -1,4 +1,4 @@
-package mutable.domain
+package concurrent.domain
 
 import java.util.concurrent.atomic.AtomicReference
 import scala.collection.mutable.{Buffer => MBuffer}

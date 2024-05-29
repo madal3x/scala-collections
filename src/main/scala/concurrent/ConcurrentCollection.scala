@@ -1,6 +1,6 @@
-package mutable
+package concurrent
 
-import mutable.domain.SchoolConcurrent
+import concurrent.domain.SchoolConcurrent
 
 // list other concurrent collections
 object ConcurrentCollection extends App with SchoolConcurrentExample {
