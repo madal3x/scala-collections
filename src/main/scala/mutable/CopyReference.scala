@@ -1,6 +1,6 @@
 package mutable
 
-import concurrent.domain.SchoolMutable
+import concurrentParallel.domain.SchoolMutable
 
 object CopyReference extends App {
   val school = new SchoolMutable

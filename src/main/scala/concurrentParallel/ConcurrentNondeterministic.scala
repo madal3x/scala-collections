@@ -1,6 +1,6 @@
-package concurrent
+package concurrentParallel
 
-import concurrent.domain.SchoolMutable
+import concurrentParallel.domain.SchoolMutable
 
 // show AnyRef, AnyVal hierarchy & tell about copy value or copy reference
 /*

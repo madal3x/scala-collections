@@ -1,6 +1,6 @@
-package concurrent
+package concurrentParallel
 
-import concurrent.domain.SchoolAtomic
+import concurrentParallel.domain.SchoolAtomic
 
 // list other Atomic's from Java
 object ConcurrentAtomic extends App with SchoolConcurrentExample {

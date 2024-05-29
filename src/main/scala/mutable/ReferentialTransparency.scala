@@ -1,9 +1,6 @@
 package mutable
 
-// discuss the (mathematical) function in functional programming
-// no side-effects - there are no effects outside of the function/method you are looking at
-// examples of side-effects breaking referential transparency:
-// mutating a variable, performing I/O operations,
+
 object ReferentialTransparency extends App {
   var count = 0
 

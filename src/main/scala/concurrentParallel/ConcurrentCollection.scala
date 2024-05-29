@@ -1,6 +1,6 @@
-package concurrent
+package concurrentParallel
 
-import concurrent.domain.SchoolConcurrent
+import concurrentParallel.domain.SchoolConcurrent
 
 // list other concurrent collections
 object ConcurrentCollection extends App with SchoolConcurrentExample {

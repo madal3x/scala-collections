@@ -1,4 +1,4 @@
-package concurrent.domain
+package concurrentParallel.domain
 
 trait School {
   type Student = String

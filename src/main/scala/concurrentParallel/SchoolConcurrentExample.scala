@@ -1,6 +1,6 @@
-package concurrent
+package concurrentParallel
 
-import concurrent.domain.School
+import concurrentParallel.domain.School
 
 import scala.concurrent.{Await, Future}
 import scala.concurrent.duration._
