@@ -1,8 +1,8 @@
-package immutable.map
+package domain
 
 import java.time.Instant
 
-package object domain {
+package object flightScheduler {
   type DepartureTime = Instant
   type ArrivalTime = Instant
 }

@@ -1,4 +1,4 @@
-package concurrentParallel.domain
+package domain.school
 
 import java.util.concurrent.atomic.AtomicReference
 import scala.collection.mutable.{Buffer => MBuffer}

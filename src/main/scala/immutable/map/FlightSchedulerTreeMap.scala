@@ -1,6 +1,6 @@
 package immutable.map
 
-import immutable.map.domain.{ArrivalTime, DepartureTime, Flight, FlightSchedulerTreeMap}
+import domain.flightScheduler._
 
 import java.time.{Duration, Instant}
 import scala.concurrent.{Await, Future}
@@ -8,7 +8,7 @@ import scala.util.Random
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration._
 
-object TreeMapEx extends App {
+object FlightSchedulerTreeMap extends App {
   val nrFlights = 100
   val flightScheduler = new FlightSchedulerTreeMap
   val scheduleFlights = (1 to nrFlights).map(_ =>

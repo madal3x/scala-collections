@@ -1,4 +1,4 @@
-package concurrentParallel.domain
+package domain.school
 
 import scala.collection.concurrent.TrieMap
 

@@ -1,14 +1,14 @@
-package immutable.map.domain
+package domain.flightScheduler
 
-import immutable.map.domain.FlightSchedulerTreeMap.DepartureTimeRange
+import domain.flightScheduler.FlightSchedulerTreeMap.DepartureTimeRange
 
 import java.time.Instant
 import scala.collection.immutable.TreeMap
 
+// not thread-safe, requires using AtomicReference or synchronized block
 class FlightSchedulerTreeMap {
   implicit val flightOrdering: Ordering[DepartureTime] = Ordering.by(_.getEpochSecond)
 
-  // not thread-safe, requires using AtomicReference or synchronized
   private var flights: TreeMap[DepartureTime, Flight] = TreeMap.empty
 
   def scheduleFlight(flight: Flight): Unit = {

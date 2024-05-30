@@ -1,7 +1,6 @@
 package immutable.lazily
 
 // LazyList in Scala 2.13
-// can be infinite
 object StreamEx extends App {
   // #:: - the cons operator for Stream, the tail parameter is by-name making its tail lazily evaluated
   def natsFrom(n: Int): Stream[Int] =

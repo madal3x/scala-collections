@@ -1,6 +1,6 @@
-package immutable.map.domain
+package domain.flightScheduler
 
-import java.time.{Duration, Instant}
+import java.time.Duration
 
 case class Flight(flightNumber: String,
                   departureTime: DepartureTime,

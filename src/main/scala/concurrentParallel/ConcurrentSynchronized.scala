@@ -1,6 +1,6 @@
 package concurrentParallel
 
-import concurrentParallel.domain.SchoolMutableSynchronized
+import domain.school.SchoolMutableSynchronized
 
 object ConcurrentSynchronized extends App with SchoolConcurrentExample {
   runExample(new SchoolMutableSynchronized)
