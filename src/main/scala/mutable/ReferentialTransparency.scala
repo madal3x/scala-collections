@@ -11,9 +11,9 @@ object ReferentialTransparency extends App {
 
   val result1 = increment() // result1 = 1
   val result2 = increment() // result2 = 2
-
   // increment() cannot be replaced with a single value as it changes the state.
 
+  // =============================================
 
   val list = List(1, 2, 3)
 
@@ -27,6 +27,7 @@ object ReferentialTransparency extends App {
   println(newList2)
   // newList1 and newList2 are identical and can replace each other without changing the program behavior
 
+  // =============================================
 
   import scala.collection.mutable.ArrayBuffer
 
