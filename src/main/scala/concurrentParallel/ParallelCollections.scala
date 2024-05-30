@@ -15,4 +15,5 @@ object ParallelCollections extends App with LazyLogging {
   val evenNumbers = (2 to 2000000 by 2).par
   evenNumbers.tasksupport = new ForkJoinTaskSupport(forkJoinPool)
   evenNumbers.filter(Palindrome.isPalindrome).foreach(i => logger.info(i.toString))
+  forkJoinPool.shutdown()
 }
