@@ -1,7 +1,5 @@
 package domain.flightBook
 
-import immutable.map.FlightBookTreeMap.Passenger
-
 import scala.collection.immutable.TreeMap
 
 case class Flight(id: String, seats: TreeMap[Int, Passenger] = TreeMap.empty) {

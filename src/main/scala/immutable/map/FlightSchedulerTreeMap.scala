@@ -10,6 +10,7 @@ import scala.concurrent.duration._
 
 object FlightSchedulerTreeMap extends App {
   val nrFlights = 100
+  // not thread safe implementation of FlightSchedulerTreeMap
   val flightScheduler = new FlightSchedulerTreeMap
   val scheduleFlights = (1 to nrFlights).map(_ =>
     Future(
